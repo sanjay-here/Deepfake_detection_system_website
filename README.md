@@ -54,6 +54,7 @@ cd deepfake-detection-system
 
 # Start development server
 >npm run dev
+
 Then open http://localhost:5173 in your browser.
 
 📌 How It Works
