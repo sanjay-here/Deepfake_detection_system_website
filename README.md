@@ -50,10 +50,10 @@ git clone https://github.com/sanjay-here/Deepfake_detection_system_website.git
 cd deepfake-detection-system
 
 # Install dependencies
-npm install
+>npm install
 
 # Start development server
-npm run dev
+>npm run dev
 Then open http://localhost:5173 in your browser.
 
 📌 How It Works
