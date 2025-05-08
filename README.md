@@ -39,6 +39,8 @@ project/
 └── package.json
 
 ---
+##DATASET is present in same folder for testing purpose with some Potential deepfaked photos and videos from internet. 
+##Note: This is collected only for Educational purpose and testing the project.
 
 ## 🚀 How to Run Locally
 
