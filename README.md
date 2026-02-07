@@ -1,3 +1,6 @@
+[Live Demo](https://deepfake-detection-system-nine.vercel.app/)
+
+
 # 🤖 Deepfake Detection System
 
 A modern web application that detects deepfake manipulations in facial images using browser-based face recognition models. This tool allows users to upload an original and a suspect (test) image, analyze them, and identify discrepancies that could indicate AI-generated tampering.
