@@ -133,7 +133,7 @@ function App() {
   return (
     <>
       {/* Animated background */}
-      <div className="fixed inset-0 -z-10 overflow-hidden">
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 dark:from-blue-900/30 dark:via-purple-900/30 dark:to-pink-900/30 animate-gradient-shift"></div>
         <div className="absolute top-0 left-0 right-0 bottom-0">
           {[...Array(30)].map((_, i) => (
@@ -150,7 +150,6 @@ function App() {
         </div>
       </div>
 
-      {/* Dark mode toggle */}
       <button
         onClick={toggleDarkMode}
         className="fixed top-4 right-4 p-2 rounded-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm shadow-lg hover:scale-110 transition-transform duration-300"
@@ -161,6 +160,21 @@ function App() {
           <Moon className="w-6 h-6 text-gray-700" />
         )}
       </button>
+
+      {/* Dataset Download Button */}
+      <a
+        href="/sampleDataset1.zip"
+        download
+        className="fixed top-4 left-4 z-50 flex items-center gap-2 
+                  px-4 py-2 rounded-lg
+                  bg-blue-600 hover:bg-blue-700 
+                  text-white text-sm font-medium
+                  shadow-lg backdrop-blur-sm
+                  hover:scale-105 transition-all duration-300"
+      >
+        <Upload className="w-4 h-4" />
+        Dataset
+      </a>
 
       <div className="relative min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
